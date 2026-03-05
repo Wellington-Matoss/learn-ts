@@ -25,3 +25,17 @@ const z: string | null = null;
 // console.log(x, typeof x);
 // console.log(y, typeof y);
 // console.log(z, typeof z);
+
+interface IUser {
+  _id: string;
+  name: string;
+  age: number;
+  email: string;
+}
+
+const createUser = (user: IUser) => {
+  console.log(user.name);
+  console.log(user.email);
+};
+
+// createUser({ _id: '1', name: 'Kyoya', age: 26, email: 'kyoya@gmail.com' });
